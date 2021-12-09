@@ -68,7 +68,7 @@ const Signup = ({navigation}) => {
                     <Buttons btext='Sign up' backgroundColor='blue' fontSize={36} color='#fff' textAlign='center' borderRadius={10}/>
                 </View>
                 <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
-                <Text style={{textAlign:'center',marginTop:10,color:'grey'}}>Already have an account</Text>
+                <Text style={{textAlign:'center',marginTop:35,color:'grey'}}>Already have an account</Text>
                 </TouchableOpacity>
             </View>
         </View>
