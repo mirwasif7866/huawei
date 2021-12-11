@@ -20,11 +20,14 @@ const Buttons=(props)=>{
         padding,
         height,
         width,
-        justifyContent
+        justifyContent,
+        alignItems,
+        alignContent,
+        // alignSelf
     } = props
 return (
     <View>
-        <TouchableOpacity onPress={onPress} style={{backgroundColor:backgroundColor,alignSelf:alignSelf,borderRadius:borderRadius,borderWidth:borderWidth,borderColor,margin:margin,padding:padding,height:height,width:width,justifyContent:justifyContent}}>
+        <TouchableOpacity onPress={onPress} style={{backgroundColor:backgroundColor,alignSelf:alignSelf,borderRadius:borderRadius,borderWidth:borderWidth,borderColor,margin:margin,padding:padding,height:height,width:width,justifyContent:justifyContent,alignItems:alignItems,alignSelf:alignSelf,alignContent:alignContent}}>
         <View>
     <Text style={{color:color,fontSize:fontSize,textAlign:textAlign}}>{btext}</Text>
     </View>
