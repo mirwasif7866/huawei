@@ -46,7 +46,7 @@ const Login2 = ({navigation}) => {
     >
         <View style={styles.centeredView}>
         <View style={styles.modalView}>
-            <AntDesign name="checkcircle" size={50} color="blue" />
+            <AntDesign name="checkcircle" size={70} color="blue" />
             <Text style={styles.modalText}>Success</Text>
             <Text style={{color:'grey'}}>congratulation, you have </Text>
             <Text style={{color:'grey'}}>completed your registration!</Text>
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     padding: 5,
     alignItems: "center",
     shadowColor: "#000",
-    height:"25%",
+    height:"30%",
     width:'80%',
     shadowOffset: {
     width: 0,
@@ -95,7 +95,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 10,
     elevation: 2,
-    width:250
+    width:250,
+    top:10,
     },
     buttonOpen: {
     backgroundColor: "#F194FF",
