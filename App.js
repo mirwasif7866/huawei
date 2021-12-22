@@ -15,7 +15,7 @@ export default function App() {
     <View style={styles.container}>
       {/* <OnboardingScreen/> */}
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={{headerShown:false}}>
           <Stack.Screen name='Onboarding' component={OnboardingScreen} />
           <Stack.Screen name='Signup' component={Signup} />
           <Stack.Screen name='Login' component={Login} />

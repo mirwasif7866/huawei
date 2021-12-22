@@ -12,7 +12,7 @@ const Login2 = ({navigation}) => {
     return(
         <View style={{flex:1,backgroundColor:'#fff'}}>
             <View style={{flex:1}}>
-                <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
+                <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center',top:20}}>
                     <View style={{right:'350%'}}>
                         <TouchableOpacity onPress={()=>navigation.navigate('Login1')}>
                     <AntDesign name="close" size={24} color="black" />
@@ -48,6 +48,8 @@ const Login2 = ({navigation}) => {
         <View style={styles.modalView}>
             <AntDesign name="checkcircle" size={50} color="blue" />
             <Text style={styles.modalText}>Success</Text>
+            <Text style={{color:'grey'}}>congratulation, you have </Text>
+            <Text style={{color:'grey'}}>completed your registration!</Text>
             <Pressable
             style={[styles.button, styles.buttonClose]}
             onPress={() => setModalVisible(!modalVisible)}
@@ -79,8 +81,8 @@ const styles = StyleSheet.create({
     padding: 5,
     alignItems: "center",
     shadowColor: "#000",
-    height:"20%",
-    width:'50%',
+    height:"25%",
+    width:'80%',
     shadowOffset: {
     width: 0,
     height: 2
@@ -92,7 +94,8 @@ const styles = StyleSheet.create({
     button: {
     borderRadius: 10,
     padding: 10,
-    elevation: 2
+    elevation: 2,
+    width:250
     },
     buttonOpen: {
     backgroundColor: "#F194FF",
@@ -109,6 +112,8 @@ const styles = StyleSheet.create({
     modalText: {
     marginBottom: 15,
     textAlign: "center",
-    fontSize:18
+    fontSize:18,
+    top:5,
+    fontWeight:'bold'
     }
 });

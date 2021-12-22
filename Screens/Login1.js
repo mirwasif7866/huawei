@@ -11,7 +11,7 @@ const Login1 = ({navigation}) => {
     return(
         <View style={{flex:1,backgroundColor:'#D3D3D3'}}>
             <View style={{flex:1}}>
-                <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
+                <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center',top:20}}>
                     <View style={{right:'220%'}}>
                         <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
                     <AntDesign name="left" size={24} color="black" />
@@ -21,7 +21,7 @@ const Login1 = ({navigation}) => {
             </View>
             <View style={{}}></View>
             <View style={{alignItems:'center',marginTop:35}}>
-            <Images IMAGE={require('../images/phone.jpg')} height={120} width={120}/>
+            <Images IMAGE={require('../images/phone.jpg')} height={120} width={120} top={30}/>
             </View>
             </View>
             <View style={{flex:2,backgroundColor:'#fff',borderTopEndRadius:30,borderTopStartRadius:30}}>
