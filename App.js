@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
@@ -12,8 +11,6 @@ import Login2 from './Screens/Login2';
 export default function App() {
   const Stack = createNativeStackNavigator()
   return (
-    <View style={styles.container}>
-      {/* <OnboardingScreen/> */}
       <NavigationContainer>
         <Stack.Navigator screenOptions={{headerShown:false}}>
           <Stack.Screen name='Onboarding' component={OnboardingScreen} />
@@ -23,14 +20,5 @@ export default function App() {
           <Stack.Screen name='Login2' component={Login2} />
         </Stack.Navigator>
       </NavigationContainer>
-      <StatusBar style='auto' />
-    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-});
