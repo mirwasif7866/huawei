@@ -65,7 +65,7 @@ const Signup = ({navigation}) => {
                     </TouchableOpacity>
                 </View>
                 <View style={{width:'100%',marginTop:50}}>
-                    <Buttons btext='Sign up' backgroundColor='blue' fontSize={36} color='#fff' textAlign='center' borderRadius={10}/>
+                    <Buttons btext='Sign up' backgroundColor='blue' fontSize={36} color='#fff' textAlign='center' borderRadius={10} onPress={()=>navigation.navigate('Login2')}/>
                 </View>
                 <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
                 <Text style={{textAlign:'center',marginTop:35,color:'grey'}}>Already have an account</Text>
