@@ -50,13 +50,13 @@ const Login = ({navigation}) => {
                     <TouchableOpacity onPress={updateSecureTextEntry}>
                         {data.secureTextEntry ? 
                     <Ionicons 
-                    name="eye-off-outline" 
+                    name="eye-outline" 
                     size={24} 
                     color="black" 
                     />
                     :
                     <Ionicons 
-                    name="eye-outline" 
+                    name="eye-off-outline" 
                     size={24} 
                     color="black" 
                     />
